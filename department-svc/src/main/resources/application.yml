@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: department-svc
+
+server:
+  servlet:
+    context-path: /department-svc
+  port: ${PORT:8082}
