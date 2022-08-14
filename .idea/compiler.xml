@@ -8,14 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="discovery-svc" />
-        <module name="employee-scv" />
         <module name="department-svc" />
+        <module name="employee-svc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="department-svc" target="18" />
       <module name="discovery-svc" target="18" />
-      <module name="employee-scv" target="18" />
+      <module name="employee-svc" target="18" />
       <module name="springboot-microservice-app" target="18" />
     </bytecodeTargetLevel>
   </component>
@@ -23,7 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="department-svc" options="-parameters" />
       <module name="discovery-svc" options="-parameters" />
-      <module name="employee-scv" options="-parameters" />
+      <module name="employee-svc" options="-parameters" />
       <module name="springboot-microservice-app" options="" />
     </option>
   </component>
