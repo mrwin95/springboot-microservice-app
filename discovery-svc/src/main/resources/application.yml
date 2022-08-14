@@ -4,8 +4,6 @@ spring:
 
 server:
   port: ${PORT:8761}
-  servlet:
-    context-path: /discovery-svc
 
 
 # initialize eureka server
@@ -15,4 +13,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      default-Zone: ${DEFAULT_ZONE:http://localhost:8761}
+      defaultZone: http://localhost:8761/eureka/
