@@ -9,28 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.app</groupId>
-    <artifactId>springboot-microservice-app</artifactId>
-    <version>0.0.1</version>
-    <name>springboot-microservice-app</name>
-    <description>springboot-microservice-app</description>
-    <packaging>pom</packaging>
+    <artifactId>employee-scv</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>employee-scv</name>
+    <description>employee-scv</description>
     <properties>
         <java.version>18</java.version>
-        <spring-cloud.version>2021.0.3</spring-cloud.version>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,7 +45,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.2</version>
                 <configuration>
                     <excludes>
                         <exclude>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/discovery-svc/discovery-svc.iml" filepath="$PROJECT_DIR$/discovery-svc/discovery-svc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employee-scv/employee-scv.iml" filepath="$PROJECT_DIR$/employee-scv/employee-scv.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-microservice-app.iml" filepath="$PROJECT_DIR$/springboot-microservice-app.iml" />
     </modules>
   </component>

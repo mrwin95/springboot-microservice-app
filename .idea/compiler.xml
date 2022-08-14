@@ -9,16 +9,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-microservice-app" />
         <module name="discovery-svc" />
+        <module name="employee-scv" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discovery-svc" target="18" />
+      <module name="employee-scv" target="18" />
       <module name="springboot-microservice-app" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="discovery-svc" options="-parameters" />
+      <module name="employee-scv" options="-parameters" />
       <module name="springboot-microservice-app" options="-parameters" />
     </option>
   </component>
