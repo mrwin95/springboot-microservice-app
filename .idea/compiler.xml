@@ -10,12 +10,14 @@
         <module name="discovery-svc" />
         <module name="department-svc" />
         <module name="employee-svc" />
+        <module name="gateway-svc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="department-svc" target="18" />
       <module name="discovery-svc" target="18" />
       <module name="employee-svc" target="18" />
+      <module name="gateway-svc" target="18" />
       <module name="springboot-microservice-app" target="18" />
     </bytecodeTargetLevel>
   </component>
@@ -24,6 +26,7 @@
       <module name="department-svc" options="-parameters" />
       <module name="discovery-svc" options="-parameters" />
       <module name="employee-svc" options="-parameters" />
+      <module name="gateway-svc" options="-parameters" />
       <module name="springboot-microservice-app" options="" />
     </option>
   </component>

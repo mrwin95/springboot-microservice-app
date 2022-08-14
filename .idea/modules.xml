@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/department-svc/department-svc.iml" filepath="$PROJECT_DIR$/department-svc/department-svc.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-svc/discovery-svc.iml" filepath="$PROJECT_DIR$/discovery-svc/discovery-svc.iml" />
       <module fileurl="file://$PROJECT_DIR$/employee-svc/employee-svc.iml" filepath="$PROJECT_DIR$/employee-svc/employee-svc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-svc/gateway-svc.iml" filepath="$PROJECT_DIR$/gateway-svc/gateway-svc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-microservice-app.iml" filepath="$PROJECT_DIR$/springboot-microservice-app.iml" />
     </modules>
   </component>
