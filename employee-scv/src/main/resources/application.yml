@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: employee-svc
+
+server:
+  servlet:
+    context-path: /employee-svc
+  port: ${PORT:8081}
+
+
