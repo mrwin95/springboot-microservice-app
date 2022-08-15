@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  postgresql:
+    container_name: postgresql
+    image: postgres:14.5-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Thang123
+      - PG_DATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ./db/:/var/lib/postgresql/data
+
+volumes:
+  db:
+    driver: local
