@@ -22,7 +22,8 @@ spring:
       server:
         git:
           uri: https://github.com/mrwin95/config-file-server.git
-          password: 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
+          password: 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
+          #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
           username: mrwin95
           default-label: main
 server:
