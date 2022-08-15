@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/department-svc/pom.xml" />
         <option value="$PROJECT_DIR$/employee-svc/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-svc/pom.xml" />
+        <option value="$PROJECT_DIR$/config-service/pom.xml" />
       </list>
     </option>
   </component>

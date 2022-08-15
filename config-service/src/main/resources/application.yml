@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-svc
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mrwin95/config-file-server.git
+          password: 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
+server:
+  servlet:
+    context-path: /config-svc
+  port: 8083
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

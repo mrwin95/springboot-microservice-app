@@ -10,10 +10,12 @@
         <module name="discovery-svc" />
         <module name="department-svc" />
         <module name="employee-svc" />
+        <module name="config-service" />
         <module name="gateway-svc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-service" target="18" />
       <module name="department-svc" target="18" />
       <module name="discovery-svc" target="18" />
       <module name="employee-svc" target="18" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-service" options="-parameters" />
       <module name="department-svc" options="-parameters" />
       <module name="discovery-svc" options="-parameters" />
       <module name="employee-svc" options="-parameters" />
