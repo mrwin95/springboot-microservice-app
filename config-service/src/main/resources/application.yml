@@ -1,17 +1,34 @@
 spring:
   application:
     name: config-svc
+  profiles:
+    active: dev
+  datasource:
+    username: postgres
+    password: Thang123
+    url: jdbc:postgresql://localhost:5432/microapp
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform:
+  #    database-platform: org.postgresql.Driver
 
   cloud:
     config:
       server:
         git:
           uri: https://github.com/mrwin95/config-file-server.git
-          password: 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
+          password: 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
+          username: mrwin95
+          default-label: main
 server:
   servlet:
     context-path: /config-svc
-  port: 8083
+  port: 8888
 eureka:
   client:
     register-with-eureka: true

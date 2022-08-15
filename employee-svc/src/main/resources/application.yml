@@ -1,8 +1,10 @@
 spring:
   application:
     name: employee-svc
+  profiles:
+    active: dev
   config:
-    import: optional:configserver:http://localhost:8083/config-svc/
+    import: optional:configserver:http://localhost:8888/config-svc/
 server:
   servlet:
     context-path: /employee-svc
