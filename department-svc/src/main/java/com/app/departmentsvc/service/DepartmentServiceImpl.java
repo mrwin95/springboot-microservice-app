@@ -14,7 +14,7 @@ public class DepartmentServiceImpl implements DepartmentService{
     private final DepartmentRepository repository;
 
     @Override
-    public List<Department> selectByCode(String code) {
+    public List<Department> selectDepartmentByCode(String code) {
         return repository.findByCode(code);
     }
 
@@ -23,7 +23,7 @@ public class DepartmentServiceImpl implements DepartmentService{
         return repository.findAll();
     }
     @Override
-    public Department selectById(Long id) {
+    public Department findDepartmentById(Long id) {
         return repository.findById(id).orElseThrow(() -> new DepartmentNotFoundException("The department with id #" + id + " not found."));
     }
 
@@ -34,13 +34,13 @@ public class DepartmentServiceImpl implements DepartmentService{
 
     @Override
     public void deleteDepartment(Long id) {
-        Department department = this.selectById(id);
+        Department department = repository.findById(id).orElseThrow(() -> new DepartmentNotFoundException("The department with id #" + id + " not found."));
         repository.delete(department);
     }
 
     @Override
     public void updateDepartment(Department department) {
-        Department updatedDepartment = this.selectById(department.getId());
+        Department updatedDepartment = repository.findById(department.getId()).orElseThrow(() -> new DepartmentNotFoundException("The department with id #" + department.getId() + " not found."));
         repository.saveAndFlush(updatedDepartment);
     }
 }
