@@ -3,11 +3,30 @@ spring:
     name: gateway-svc
   main:
     web-application-type: reactive
+  devtools:
+    livereload:
+      enabled: true
+      port: 35729
 
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: employee-id
+          uri: lb://employee-svc
+          predicates:
+            - Path=/employee/**
+        - id: department-id
+          uri: lb://department-svc
+          predicates:
+            - Path=/department/**
 server:
   port: ${PORT:8080}
   servlet:
     context-path: /gateway-svc
+
 eureka:
   client:
     register-with-eureka: true

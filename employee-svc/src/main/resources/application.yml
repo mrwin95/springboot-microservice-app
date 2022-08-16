@@ -3,6 +3,10 @@ spring:
     name: employee-svc
   profiles:
     active: dev
+  devtools:
+    livereload:
+      enabled: true
+      port: 35749
   config:
     import: optional:configserver:http://localhost:8888/config-svc/
 server:
