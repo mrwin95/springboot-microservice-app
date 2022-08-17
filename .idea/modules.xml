@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-svc/config-service.iml" filepath="$PROJECT_DIR$/config-svc/config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/department-svc/department-svc.iml" filepath="$PROJECT_DIR$/department-svc/department-svc.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-svc/discovery-svc.iml" filepath="$PROJECT_DIR$/discovery-svc/discovery-svc.iml" />
       <module fileurl="file://$PROJECT_DIR$/employee-svc/employee-svc.iml" filepath="$PROJECT_DIR$/employee-svc/employee-svc.iml" />

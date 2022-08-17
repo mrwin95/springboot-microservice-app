@@ -9,10 +9,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.app</groupId>
-    <artifactId>config-service</artifactId>
+    <artifactId>config-svc</artifactId>
     <version>0.0.1</version>
-    <name>config-service</name>
-    <description>config-service</description>
+    <name>config-svc</name>
+    <description>config-svc</description>
     <properties>
 
     </properties>

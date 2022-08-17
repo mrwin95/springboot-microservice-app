@@ -16,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-service" target="18" />
+      <module name="config-svc" target="18" />
       <module name="department-svc" target="18" />
       <module name="discovery-svc" target="18" />
       <module name="employee-svc" target="18" />
@@ -26,6 +27,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-service" options="-parameters" />
+      <module name="config-svc" options="-parameters" />
       <module name="department-svc" options="-parameters" />
       <module name="discovery-svc" options="-parameters" />
       <module name="employee-svc" options="-parameters" />
