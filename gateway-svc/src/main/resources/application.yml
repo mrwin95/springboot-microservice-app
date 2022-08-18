@@ -13,20 +13,16 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: employee-id
-          uri: lb://employee-svc
-          predicates:
-            - Path=/employee/**
-        - id: department-id
-          uri: lb://department-svc
-          predicates:
-            - Path=/department/**
 server:
   port: ${PORT:8080}
   servlet:
     context-path: /gateway-svc
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 eureka:
   client:
     register-with-eureka: true
